@@ -1,0 +1,29 @@
+Nova funcionalidade
+
+Começar com estrutural primeiro \-\> o final é o Android
+
+Começar:
+
+1. Verificar Migrations (BD)  
+2. Receber chave-valor na API  
+3. Importação e Exportação  
+4. V  
+5. Configurar uma Política X Divisão de Vendas  
+6. Utilizar essa configuração no App Flutter e Android
+
+—-------
+
+# **Testando com o Postman:**
+
+* Api Salvar pedido (Post) \#\# Parametros  
+  * Trocar o idEmpresa para: 5000  
+  * ApiToken: colocar o Token do Usuário.  
+  * Foi usado o token do meu usuário. Pegamos isso na tela "Usuários \- ApiToken"  
+  * liberarExportacao : trocado para: 0\. (Porque: ) \#\# Body  
+* Colado um JSON de um pedido. Obtermos isso na tela: "Log de envio de dados do vendedor"
+
+* uniqueID : Trocar para salvar outro pedido
+
+# **Resposta da API, esta vindo o Pedido.codDivisaoVendas corretamente:**
+
+\#\# Testamos pelo Postman porque: No App Flutter ainda não esta pronto, então não daria para testar pelo Inspecionar na tela de pedidos.
