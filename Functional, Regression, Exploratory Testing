@@ -1,0 +1,92 @@
+# QA Manual Testing Portfolio – Web / Virtual Store
+
+**Role:** Manual QA / Functional Testing  
+**Scope:** Web and Mobile – Functional, Regression, Exploratory Testing  
+**Focus:** End-to-end flows, UI validation, business rules, hierarchical permissions  
+
+---
+
+## 1. Test Scenario: Login and Authentication
+
+**Scenario:** Verify login functionality and password recovery  
+
+**Test Cases:**
+
+- [x] **TC-001:** Login with valid credentials – User is logged in successfully  
+- [x] **TC-002:** Login with invalid credentials – Error message displayed  
+- [x] **TC-003:** Login with empty fields – Validation message displayed  
+- [x] **TC-004:** Password recovery – Email with reset link sent  
+
+**Bug Reports:**  
+- BR-001: No issues found during login testing  
+
+**Notes:** Covers all combinations of valid, invalid, and empty credentials; verified email triggers and first-login password change flows.
+
+---
+
+## 2. Test Scenario: Self-Registration
+
+**Scenario:** Verify CPF auto-registration, email confirmation, and password reset  
+
+**Test Cases:**
+
+- [x] **TC-010:** Register with valid CPF – Confirmation email sent  
+- [x] **TC-011:** First login password change – System prompts to change password  
+- [x] **TC-012:** Login after password change – User logged in successfully  
+- [x] **TC-013:** Register with already used email – Email sent to recover password  
+- [ ] **TC-014:** CNPJ registration – Registration completed  
+
+**Bug Reports:**  
+- BR-010: Auto-registration with CNPJ not implemented yet  
+
+**Notes:** Demonstrates handling of edge cases, first-login flows, and integration with email service.
+
+---
+
+## 3. Test Scenario: Product Listings and UI
+
+**Scenario:** Validate product listing, search, filtering, and layout responsiveness  
+
+**Test Cases:**
+
+- [x] **TC-020:** Search bar functionality – Relevant products displayed  
+- [x] **TC-021:** Filter & sort products – Correct products displayed  
+- [ ] **TC-022:** Pagination – Products displayed correctly  
+- [x] **TC-023:** Favorites – Changes reflected correctly  
+- [x] **TC-024:** Store settings update – Changes saved correctly  
+- [!] **TC-025:** HTML injection test – Page layout remains stable  
+
+**Bug Reports:**  
+- BR-020: HTML injection not rendering correctly  
+- BR-021: Product photo change causes product to disappear  
+
+---
+
+## 4. Test Scenario: Order Flow
+
+**Scenario:** Verify order creation, hierarchy restrictions, stock validation, and payment conditions  
+
+**Test Cases:**
+
+- [ ] **TC-030:** Hierarchy blocking – Only manager can approve  
+- [ ] **TC-031:** Breakable packaging validation – Order blocked when selling less than allowed  
+- [ ] **TC-032:** Stock validation – Attempt to order out-of-stock product blocked  
+- [ ] **TC-033:** Minimum payment condition – Discount/interest applied correctly  
+- [ ] **TC-034:** Tax calculation – Correct total calculated  
+
+**Bug Reports:**  
+- BR-030: Clicking “Finalize Order” without selecting payment method does nothing  
+- BR-031: Floating finalize button does not work  
+- BR-032: Close (X) button not functional  
+
+**Notes:** Covers business rules, permissions, and critical financial validations, showing attention to detail in functional testing.
+
+---
+
+## Summary of QA Work
+
+- Executed **manual testing for Web and Mobile**, covering login, registration, product management, and order workflows  
+- Designed **high-quality test cases and scenarios** with edge case coverage  
+- Documented **bugs clearly** with reproducible steps, screenshots, severity, and priority  
+- Ensured **traceability** between requirements, test scenarios, test cases, and defects  
+- Focused on **end-to-end validation**, hierarchy, and UI/UX consistency
